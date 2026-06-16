@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f5f0;
+    color: #2e2e2e;
+}
+
+nav {
+    background-color: #2f4f4f;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #d9c7a7;
+}
+
+.hero {
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.hero img {
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+section {
+    padding: 70px 10%;
+}
+
+section h2 {
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    font-size: 32px;
+}
+
+#about p {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+
+    line-height: 1.8;
+}
+
+.skills-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: white;
+
+    padding: 20px 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.hobbies-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.hobby-card {
+    width: 300px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.hobby-card h3 {
+    padding: 15px;
+}
+
+.hobby-card p {
+    padding: 0 15px 20px;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background-color: #2f4f4f;
+
+    color: white;
+}
+
+hr {
+    border: dotted #8c9a8c 6px;
+    border-bottom: none;
+
+    width: 5%;
+
+    margin: 50px auto;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hobby-card {
+        width: 90%;
+    }
+}
